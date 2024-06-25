@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realestate</title>
+    <style>
+        #start{
+            box-shadow: 0 5px 10px black;
+            height:500px;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px;
+            background-image:url("https://clarity.pk/wp-content/uploads/2021/03/realestate-pakistan-scaled.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #leftbutton{
+            height:10%;
+            border: 1px solid black;
+            background-color: rgba(95, 168, 236, 0);
+        }
+        #rightbutton{
+            height:10%;
+            border: 1px solid black;
+            background-color: rgba(95, 168, 236, 0);
+        }
+        #myform{
+            display: flex;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #second{
+            display: flex;
+            justify-content: center;
+        }
+        #formdiv{
+            display: flex;
+            justify-content: center;
+        }
+        #searchbtn{
+            background-image:url("https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png");
+        }
+    </style>
+    <script>
+        var i=0;
+        const n=3;
+        window.onload = function() {
+        setInterval(incimage,4000);
+        }
+        function incimage(){
+            i++;
+            if(i>n)
+               i=0;
+            checkimg();
+        }
+        function decimage(){
+            i--;
+            if(i<0)
+               i=n;
+            checkimg();
+        }
+        function checkimg(){
+            if(i==0)
+            document.getElementById("start").style="background-image:url('https://clarity.pk/wp-content/uploads/2021/03/realestate-pakistan-scaled.jpg')";
+            if(i==1)
+            document.getElementById("start").style="background-image:url('https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+            if(i==2)
+            document.getElementById("start").style="background-image:url('https://mrwallpaper.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg')";
+            if(i==3)
+            document.getElementById("start").style="background-image:url('https://wallpapers.com/images/hd/real-estate-tropical-mansion-20c9os156eqcqd4j.jpg')";
+        }
+        function filter(){
+            document.getElementById("myform").style="display:flex; flex-direction:row; justify-content:space-between;";
+        }
+    </script>
+</head>
+<body>
+    <div id="start">
+        <button id="leftbutton" onclick="return decimage()"><</button>
+        <button id="rightbutton" onclick="return incimage()">></button>
+    </div>
+
+    <div id="second">
+        <button onclick="return filter()">Filter</button>
+    </div>
+    <div id="formdiv">
+    <form id="myform" onsubmit="return search()">
+        <label for="locs">Location:</label>
+        <select name="locs" id="locs">
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Luxr">Luxr</option>
+        <option value="Aswan">Aswan</option>
+        </select>
+
+        <label for="prices" style="margin-left:10px;">Price:</label>
+        <input type="number" name="prices" id="prices">
+        <button style="margin-left:5px;"><img  width="10px" height="10px" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"></button>
+    </form>
+    </div>
+</body>
+</html>

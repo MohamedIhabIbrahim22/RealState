@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  }
+  
+  input,.cols{
+    box-sizing: border-box;
+  }
+  
+  .inner-containers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  .cols{
+    flex: 50%;
+  }
+  
+  .container{
+    flex: 75%;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  .cols{
+    padding: 0 16px;
+  }
+  
+  
+  input[type="text"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .pay-price{
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+  
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }
+  .some-class {
+    float: left;
+    clear: none;
+  }
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .paysalert{
+      color:red;
+      margin-left: 5%;;
+  }
+  .div-alert{
+      display: flex;
+  }
+  @media (max-width: 800px) {
+    .inner-containers{
+      flex-direction: column-reverse;
+    }
+  }
+  

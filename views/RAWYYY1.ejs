@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <%- include('partials/header', { title: title }) %>
+
+  <main>
+    <div class="videocontainer">
+        <video class="video" autoplay muted loop><source src="https://dpe.xceeduae.com/wp-content/uploads/2024/02/video_20.mp4"  type="video/mp4"></video>
+        <div id="back"></div>
+    </div>
+    <div class="content">
+        <h1>Real Estate</h1>
+        <p>We aim for your comfort</p>
+    </div>
+    <section class="FIND">
+      <h1>Find Your Dream Home</h1>
+      <p>Discover the perfect property for you.</p>
+    </section>
+
+    <section class="featured properties">
+      <h2>Featured Properties</h2>
+      <div class="property-grid">
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Us</h2>
+      <p>We are a leading real estate company dedicated to helping you find your dream home.</p>
+      <a href="#" class="btn">Learn More</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Real Estate Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

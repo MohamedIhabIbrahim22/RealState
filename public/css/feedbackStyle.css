@@ -1,0 +1,80 @@
+.feedbackpage  {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 100px;
+    padding: 0;
+}
+
+.feedbackpage  .container {
+    max-width: 500px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedbackpage  h2 {
+    text-align: center;
+    color: #333;
+}
+.feedbackpage  .form-group {
+    margin-bottom: 20px;
+}
+.feedbackpage  label {
+    display: block;
+    font-weight: bold;
+}
+
+.feedbackpage  select,input {
+    margin-bottom: 10px;
+}
+.feedbackpage  input[type="text"],
+.feedbackpage  input[type="number"],
+.feedbackpage  input[type="email"],
+.feedbackpage  select,
+.feedbackpage  button,
+.feedbackpage  textarea,
+.feedbackpage  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.feedbackpage  select option::first-line{
+    color: #ccc;
+}
+.feedbackpage  textarea {
+    resize: vertical;
+}
+.feedbackpage  ::placeholder {
+    color: #ccc;
+    font-weight: 50;
+}
+.feedbackpage  select[required] option:first-of-type {
+    color: #ccc;
+  }
+.feedbackpage  .below {
+    color: #ccc;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.feedbackpage  .below-email{
+    color: #ccc;
+}
+.feedbackpage  .btn {
+    background-color: #24262b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedbackpage  .btn:hover {
+    background-color: #0056b3;
+}

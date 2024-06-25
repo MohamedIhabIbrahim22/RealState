@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function PaperFn()
+        {
+        document.getElementById("scoreU").innerHTML="Paper";
+
+        let value = Math.floor(Math.random()*3);
+        if(value == 0)
+        {
+            document.getElementById("ScoreC").innerHTML="Rock";
+        }
+        else if(value == 1)
+        {
+            document.getElementById("ScoreC").innerHTML="Paper";
+        }
+        else if(value == 2)
+        {
+            document.getElementById("ScoreC").innerHTML="Scissors";
+        }
+        }
+
+        function RockFn()
+        {
+        document.getElementById("scoreU").innerHTML="Rock";
+        
+        let value = Math.floor(Math.random()*3);
+        if(value == 0)
+        {
+            document.getElementById("ScoreC").innerHTML="Rock";
+        }
+        else if(value == 1)
+        {
+            document.getElementById("ScoreC").innerHTML="Paper";
+        }
+        else if(value == 2)
+        {
+            document.getElementById("ScoreC").innerHTML="Scissors";
+        }
+        }
+
+
+        function ScissorsFn()
+        {let playerScore = 0;
+    let computerScore = 0;
+        document.getElementById("scoreU").innerHTML="Scissors";
+        let value = Math.floor(Math.random()*3);
+        if(value == 0)
+        {
+            document.getElementById("ScoreC").innerHTML="Rock";
+        }
+        else if(value == 1)
+        {
+            document.getElementById("ScoreC").innerHTML="Paper";
+        }
+        else if(value == 2)
+        {
+            document.getElementById("ScoreC").innerHTML="Scissors";
+        }
+
+        if(value == 0)
+        {
+        computerScore++;
+            document.getElementById("numC").innerHTML=computerScore;
+        }
+
+        else if(value == 1)
+        {
+        }
+        else if(value == 2)
+        {
+            playerScore++;
+            document.getElementById("numU").innerHTML=playerScore;
+        }
+        }
+
+        
+    </script>
+</head>
+<body>
+    <button id = "ro" onclick="RockFn()">Rock</button>
+    <button id = "pa" onclick="PaperFn()">Paper</button>
+    <button id = "si" onclick="ScissorsFn()">Scissors</button>
+    <div>
+        <div>
+<h1>User Score : </h1>
+<p id = "scoreU">Rock/Paper/Scissor</p>
+<p id = "numU">0</p>
+        </div>
+    <div>
+<h1>Computer Score : </h1>
+<p id = "ScoreC"></p>
+<p id = "numC">0</p>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

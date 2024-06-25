@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="/css/agent.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.27.2/dist/axios.min.js"></script>
+    <title>Find Agent</title>
+</head>
+<body>
+    <%- include('partials/header', { title: title }) %>
+        <section id="background">
+            <div class="title">
+                <h1>A great agent makes all the difference</h1>
+            </div>
+        </section>
+        <section class="sec1">
+            <h1>Find an Agent</h1>
+            <div class="search-box">
+                <div class="first">
+                    <label>LOCATION</label>
+                    <p>Enter the location of the home you want to sell</p>
+                    <div class="location-search">
+                        <input type="text" placeholder="City" id="city-input"> 
+                    </div>
+                </div>
+            </div>
+            <div class="search-box1">
+            <button type="button" onclick="searchAgents()">Search</button> 
+        </div>
+
+        </section>
+        
+        <section class="agent-list">
+            <h2>Agents</h2>
+            <ul id="agent-list"></ul>
+        </section>
+    
+        <script>
+            const cities = ["Cairo", "Alexandria", "Giza", "Luxor", "Aswan", "Nasr City", "Benha", "6 October"];
+            const agents = [
+                { name: "Ahmed Ali", phone: "010 234 567 843", city: "Cairo" },
+                { name: "Mona Hassan", phone: "010 234 567 843", city: "Cairo" },
+                { name: "Hassan Ibrahim", phone: "010 234 567 843", city: "Alexandria" },
+                { name: "Laila Saeed", phone: "010 234 567 843", city: "Giza" },
+                { name: "Nadia Youssef", phone: "010 234 567 843", city: "Luxor" },
+                { name: "Omar Farouk", phone: "010 234 567 843", city: "Aswan" },
+                { name: "Fatma Adel", phone: "010 234 567 843", city: "Giza" },
+                { name: "Mohamed Salah", phone: "010 234 567 843", city: "Cairo" },
+                { name: "Sara Mostafa", phone: "010 234 567 843", city: "Alexandria" },
+                { name: "Khaled Hussein", phone: "010 234 567 843", city: "Luxor" }
+            ];
+    
+            function searchAgents() {
+                const cityInput = document.getElementById('city-input').value.toLowerCase();
+    
+                const filteredAgents = agents.filter(agent => agent.city.toLowerCase().includes(cityInput));
+    
+                const agentList = document.getElementById('agent-list');
+                agentList.innerHTML = '';
+    
+                if (filteredAgents.length > 0) {
+                    filteredAgents.forEach(agent => {
+                        const agentItem = document.createElement('li');
+                        agentItem.textContent = `Agent: ${agent.name}, Phone: ${agent.phone}, City: ${agent.city}`;
+                        agentList.appendChild(agentItem);
+                    });
+                } else {
+                    agentList.innerHTML = '<li>No agents found</li>';
+                }
+            }
+        </script>
+    
+        <%- include('partials/footer', { title: title }) %>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sell1 {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.sell1 body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sell1 #background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-image: url(/images/img/sell-background-shadow.jpg);
+}
+
+.sell1 .sec1 img,.sell1 .sec2 img {
+  max-width: 40%;
+  height: auto;
+  float: right;
+  margin: 30px;
+  transition: 0.5s ease;
+}
+
+.sell1 .title {
+  text-align: left;
+  margin-bottom: 150px;
+  z-index: 1;
+}
+
+.sell1 .title h1 {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+}
+
+.sell1 .title h3 {
+  color: white;
+  letter-spacing: 1px;
+  text-align: left;
+  position: absolute;
+  top: 35%;
+}
+
+.sell1 .sec1 {
+  padding: 3rem 2rem;
+  height: 100vh;
+  background: aliceblue;
+}
+
+.sell1 .sec1 h1 {
+  color: rgb(2, 101, 240);
+  font-size: 45px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.sell1 .sec1 p, .sell1 .sec2 p,.sell1 .sec1 pre {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-spacing: 20px;
+}
+
+.sell1 .sec1 h2 {
+  text-align: left;
+  font-weight: 600;
+}
+
+.sell1 .sec2 {
+  padding: 3rem 2rem;
+  height: 150vh;
+}
+
+.sell1 .sec2 h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.sell1 button {
+  padding: 10px;
+  margin: 70px;
+  border-radius: 5px;
+  background-color: rgb(2, 101, 240);
+}
+
+.sell1 button:hover {
+  background-color: rgb(115, 175, 240);
+}
+
+.sell1 .block {
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.sell1 .block .grid1 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.sell1 .block .grid2 {
+  width: 50%;
+  overflow: hidden;
+}
+
+.sell1 .block h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.sell1 ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sell1 ul li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.sell1 ul li i {
+  color: rgb(2, 101, 240);
+  font-size: 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sell1 .sec3 {
+  width: 100%;
+  background-color: rgb(201, 201, 201);
+  height: 60vh;
+}
+
+.sell1 .sec3 .separator {
+  background-color: rgb(78, 55, 255);
+  width: 144px;
+  height: 3px;
+  margin: 30px auto;
+  display: block;
+}
+
+.sell1 .sec3 h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sell1 .sec3 .outer {
+  display: flex;
+}
+
+.sell1 .sec3 .inner {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.sell1 .inner img {
+  height: 6rem;
+  object-fit: contain;
+  margin: 1rem 0;
+}
+
+.sell1 .inner .img1 {
+  height: 90px;
+  width: 90px;
+}
+
+.sell1 .sec3 .inner a {
+  text-align: left;
+  margin-right: 10px;
+  color: black;
+}
+
+ @media screen and (max-width: 768px) {
+  .sell1 .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+
+  .sell1 .title h1 {
+      margin-left: 30px;
+  }
+
+  .sell1 .title h3 {
+      margin-top: 40px;
+  }
+
+  .sell1 .sec1 {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .sell1 .sec2 {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .sell1 .sec3 {
+      width: 100%;
+      height: 60vh;
+  }
+
+  .sell1 .sec2 img {
+      margin-top: 50px;
+  }
+
+  .sell1 .sec1 img,.sell1 .sec2 img {
+      max-width: 100%;
+      float: none;
+      margin: 20px auto;
+  }
+
+  .sell1 .block .grid1,.sell1 .block .grid2 {
+      width: 100%;
+  }
+
+  .sell1 .block .grid2 {
+      margin-top: 10%;
+  }
+
+  .sell1 button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+
+  .sell1 .sec3 .outer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 30rem);
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 6px;
+      margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #background .title h1{
+    margin-top: 50px;
+  }
+  .sell1 .title h3 {
+      margin-left: 30px;
+      margin-top: 100px;
+  }
+
+  .sell1 .sec1{
+    height: 160vh;
+  }
+  .sell1 .sec2 {
+      height: 160vh;
+  }
+
+  .sell1 .sec3 {
+      height: 110vh;
+  }
+}
+

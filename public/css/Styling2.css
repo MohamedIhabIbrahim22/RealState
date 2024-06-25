@@ -1,0 +1,232 @@
+
+.umbraco-forms-form
+{
+	padding: 10px 0px 10px 0px;
+}
+
+.umbraco-forms-caption
+{
+	font-size: 2em !important;
+	line-height: 2em !important;
+}
+
+.umbraco-forms-field
+{
+    clear: both;
+}
+
+.umbraco-forms-field div label
+{
+	display: inline;
+}
+
+label.umbraco-forms-label
+{
+	font-weight: bold;
+	display: block;
+	background: transparent !important;
+}
+
+.umbraco-forms-form small
+{
+	display: block;
+	float: left;
+	clear: both;
+	padding: 5px 5px 5px 200px;
+}
+
+
+.umbraco-forms-form fieldset
+{
+	padding: 1em 1em 0em 0em;
+	margin: 0 0 1.5em 0;
+	border: none !Important;
+}
+
+.umbraco-forms-form .umbraco-forms-navigation {
+    padding: 1em 0em;
+}
+
+.umbraco-forms-form legend
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	display: block;
+}
+
+.umbraco-forms-form input.text, .umbraco-forms-form input.title, .umbraco-forms-form textarea, 
+.umbraco-forms-form select
+{
+	margin: 0.5em 0;
+	border: 1px solid #bbb;
+}
+.umbraco-forms-form input.text:focus, .umbraco-forms-form input.title:focus,.umbraco-forms-form textarea:focus, .umbraco-forms-form select:focus
+{
+	border: 1px solid #666;
+}
+
+.umbraco-forms-form input.text,.umbraco-forms-form textarea
+{
+	max-width: 400px !important;
+	padding: 5px;
+    display: block;
+    width: 95%;
+}
+
+.umbraco-forms-form textarea
+{
+	height: 250px;
+}
+.umbraco-forms-form input.fileupload
+{
+	height: auto !important;
+}
+
+.umbraco-forms-form span.checkboxlist, .umbraco-forms-form span.radiobuttonlist, .umbraco-forms-form span.checkbox
+{
+	display: block;
+	float: left;
+	padding: 10px;
+}
+
+.umbraco-forms-form .checkboxlist label {
+    float: left; 
+    clear: left;
+}
+
+.umbraco-forms-form .checkboxlist input, .umbraco-forms-form .radiobuttonlist input, .umbraco-forms-form .checkbox input
+{
+	width: auto !important;
+	height: auto !important;
+	border: none !important;
+	display: inline !important;
+}
+
+.umbraco-forms-form .hiddenfield
+{
+    display:none;
+}
+
+.umbraco-forms-button
+{
+	margin-right: 10px;
+	padding: 2px 10px;
+}
+.umbraco-forms-error-message
+{
+	padding: .8em;
+	margin-bottom: .5em;
+	border: 2px solid #FBC2C4;
+}
+
+.umbraco-forms-error-message
+{
+	background: #FBE3E4;
+	color: #8a1f11;
+}
+
+.umbraco-forms-form input.contourError, .umbraco-forms-form textarea.contourError,.umbraco-forms-form input.input-validation-error, 
+.umbraco-forms-form textarea.input-validation-error
+{
+	background: #FBE3E4;
+	border-color: #FBC2C4;
+}
+
+.umbraco-forms-form span.contourError, .umbraco-forms-form span.field-validation-error
+{
+    color: #8a1f11 !important;
+    background: transparent !important;
+}
+
+.umbraco-forms-form #recaptcha_widget_div
+{
+    margin-left: 200px;
+}
+
+.umbraco-forms-form .field-validation-error
+{
+    padding-left: 5px;
+}
+
+
+
+.theMainvillas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.property-box2 {
+	width: 30rem;
+	height: 36rem;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+	margin: 0 10px;
+}
+
+.imagee {
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity .2s ease-out;
+}
+
+.hdng {
+	position: absolute;
+	inset: auto auto 30px 30px;
+	margin: 0;
+	transition: inset .3s .3s ease-out;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.villparagraph, .avilla {
+	position: absolute;
+	opacity: 0;
+	max-width: 80%;
+	transition: opacity .3s ease-out;
+}
+
+.villparagraph {
+	inset: auto auto 80px 30px;
+}
+
+.avilla {
+	inset: auto auto 40px 30px;
+	color: inherit;
+	text-decoration: none;
+}
+
+.property-box2:hover .hdng {
+	inset: auto auto 220px 30px;
+	transition: inset .2s ease-out;
+}
+
+.property-box2:hover .villparagraph, .property-box2:hover .avilla {
+	opacity: 1;
+	transition: opacity .4s .07s ease-in;
+}
+
+.property-box2:hover .imagee {
+	filter: brightness(50%);
+	transition: opacity .3s ease-in;
+	opacity: 1;
+}
+
+.material-symbols-outlined {
+	vertical-align: middle;
+}
+
+.property-content {
+	color: white;
+}
